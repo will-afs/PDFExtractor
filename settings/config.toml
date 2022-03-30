@@ -1,0 +1,18 @@
+# Keys
+title = "Project default configuration"
+
+["Cooldown Manager"]
+cooldown_manager_uri = "http://172.17.0.2:5000/"
+
+["ArXivParser"]
+time_step = 604800 # 60 s x 60 min x 24 h x 7 j = 604800 s
+arxiv_url = "https://export.arxiv.org/api/"
+cat = 'cs.ai'
+max_results = 1000
+  [["possible_cat"]]
+  id = 1
+  value = 'cs.ai'
+
+["PDFExtractor"]
+broker_url = "redis://localhost:6379/0"
+backend_url = "mongodb://localhost:27017/pdfdata" # "db+sqlite:///db.sqlite3"

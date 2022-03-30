@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link href="http://arxiv.org/api/query?search_query%3Dcat%3Acs.ai%26id_list%3D%26start%3D0%26max_results%3D20" rel="self" type="application/atom+xml"/>
+  <title type="html">ArXiv Query: search_query=cat:cs.ai&amp;id_list=&amp;start=0&amp;max_results=20</title>
+  <id>http://arxiv.org/api/P6dhfV83iYmLATGt8eVpZeGTlHo</id>
+  <updated>2021-12-23T00:00:00-05:00</updated>
+  <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">41563</opensearch:totalResults>
+  <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+  <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">20</opensearch:itemsPerPage>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9308101v1</id>
+    <updated>1993-08-01T00:00:00Z</updated>
+    <published>1993-08-01T00:00:00Z</published>
+    <title>Dynamic Backtracking</title>
+    <summary>  Because of their occasional need to return to shallow points in a search
+tree, existing backtracking methods can sometimes erase meaningful progress
+toward solving a search problem. In this paper, we present a method by which
+backtrack points can be moved deeper in the search space, thereby avoiding this
+difficulty. The technique developed is a variant of dependency-directed
+backtracking that uses only polynomial space while still providing useful
+control information and retaining the completeness guarantees provided by
+earlier approaches.
+</summary>
+    <author>
+      <name>M. L. Ginsberg</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for an online appendix and other files
+  accompanying this article</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 1, (1993), 25-46</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9308101v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9308101v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9308102v1</id>
+    <updated>1993-08-01T00:00:00Z</updated>
+    <published>1993-08-01T00:00:00Z</published>
+    <title>A Market-Oriented Programming Environment and its Application to
+  Distributed Multicommodity Flow Problems</title>
+    <summary>  Market price systems constitute a well-understood class of mechanisms that
+under certain conditions provide effective decentralization of decision making
+with minimal communication overhead. In a market-oriented programming approach
+to distributed problem solving, we derive the activities and resource
+allocations for a set of computational agents by computing the competitive
+equilibrium of an artificial economy. WALRAS provides basic constructs for
+defining computational market structures, and protocols for deriving their
+corresponding price equilibria. In a particular realization of this approach
+for a form of multicommodity flow problem, we see that careful construction of
+the decision process according to economic principles can lead to efficient
+distributed resource allocation, and that the behavior of the system can be
+meaningfully analyzed in economic terms.
+</summary>
+    <author>
+      <name>M. P. Wellman</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for any accompanying files</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 1, (1993), 1-23</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9308102v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9308102v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9309101v1</id>
+    <updated>1993-09-01T00:00:00Z</updated>
+    <published>1993-09-01T00:00:00Z</published>
+    <title>An Empirical Analysis of Search in GSAT</title>
+    <summary>  We describe an extensive study of search in GSAT, an approximation procedure
+for propositional satisfiability. GSAT performs greedy hill-climbing on the
+number of satisfied clauses in a truth assignment. Our experiments provide a
+more complete picture of GSAT's search than previous accounts. We describe in
+detail the two phases of search: rapid hill-climbing followed by a long plateau
+search. We demonstrate that when applied to randomly generated 3SAT problems,
+there is a very simple scaling with problem size for both the mean number of
+satisfied clauses and the mean branching rate. Our results allow us to make
+detailed numerical conjectures about the length of the hill-climbing phase, the
+average gradient of this phase, and to conjecture that both the average score
+and average branching rate decay exponentially during plateau search. We end by
+showing how these results can be used to direct future theoretical analysis.
+This work provides a case study of how computer experiments can be used to
+improve understanding of the theoretical properties of algorithms.
+</summary>
+    <author>
+      <name>I. P. Gent</name>
+    </author>
+    <author>
+      <name>T. Walsh</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for any accompanying files</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 1, (1993), 47-59</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9309101v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9309101v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9311101v1</id>
+    <updated>1993-11-01T00:00:00Z</updated>
+    <published>1993-11-01T00:00:00Z</published>
+    <title>The Difficulties of Learning Logic Programs with Cut</title>
+    <summary>  As real logic programmers normally use cut (!), an effective learning
+procedure for logic programs should be able to deal with it. Because the cut
+predicate has only a procedural meaning, clauses containing cut cannot be
+learned using an extensional evaluation method, as is done in most learning
+systems. On the other hand, searching a space of possible programs (instead of
+a space of independent clauses) is unfeasible. An alternative solution is to
+generate first a candidate base program which covers the positive examples, and
+then make it consistent by inserting cut where appropriate. The problem of
+learning programs with cut has not been investigated before and this seems to
+be a natural and reasonable approach. We generalize this scheme and investigate
+the difficulties that arise. Some of the major shortcomings are actually
+caused, in general, by the need for intensional evaluation. As a conclusion,
+the analysis of this paper suggests, on precise and technical grounds, that
+learning cut is difficult, and current induction techniques should probably be
+restricted to purely declarative logic languages.
+</summary>
+    <author>
+      <name>F. Bergadano</name>
+    </author>
+    <author>
+      <name>D. Gunetti</name>
+    </author>
+    <author>
+      <name>U. Trinchero</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for any accompanying files</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 1, (1993), 91-107</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9311101v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9311101v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9311102v1</id>
+    <updated>1993-11-01T00:00:00Z</updated>
+    <published>1993-11-01T00:00:00Z</published>
+    <title>Software Agents: Completing Patterns and Constructing User Interfaces</title>
+    <summary>  To support the goal of allowing users to record and retrieve information,
+this paper describes an interactive note-taking system for pen-based computers
+with two distinctive features. First, it actively predicts what the user is
+going to write. Second, it automatically constructs a custom, button-box user
+interface on request. The system is an example of a learning-apprentice
+software- agent. A machine learning component characterizes the syntax and
+semantics of the user's information. A performance system uses this learned
+information to generate completion strings and construct a user interface.
+Description of Online Appendix: People like to record information. Doing this
+on paper is initially efficient, but lacks flexibility. Recording information
+on a computer is less efficient but more powerful. In our new note taking
+softwre, the user records information directly on a computer. Behind the
+interface, an agent acts for the user. To help, it provides defaults and
+constructs a custom user interface. The demonstration is a QuickTime movie of
+the note taking agent in action. The file is a binhexed self-extracting
+archive. Macintosh utilities for binhex are available from
+mac.archive.umich.edu. QuickTime is available from ftp.apple.com in the
+dts/mac/sys.soft/quicktime.
+</summary>
+    <author>
+      <name>J. C. Schlimmer</name>
+    </author>
+    <author>
+      <name>L. A. Hermens</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for an online appendix and other files
+  accompanying this article</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 1, (1993), 61-89</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9311102v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9311102v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9312101v1</id>
+    <updated>1993-12-01T00:00:00Z</updated>
+    <published>1993-12-01T00:00:00Z</published>
+    <title>Decidable Reasoning in Terminological Knowledge Representation Systems</title>
+    <summary>  Terminological knowledge representation systems (TKRSs) are tools for
+designing and using knowledge bases that make use of terminological languages
+(or concept languages). We analyze from a theoretical point of view a TKRS
+whose capabilities go beyond the ones of presently available TKRSs. The new
+features studied, often required in practical applications, can be summarized
+in three main points. First, we consider a highly expressive terminological
+language, called ALCNR, including general complements of concepts, number
+restrictions and role conjunction. Second, we allow to express inclusion
+statements between general concepts, and terminological cycles as a particular
+case. Third, we prove the decidability of a number of desirable TKRS-deduction
+services (like satisfiability, subsumption and instance checking) through a
+sound, complete and terminating calculus for reasoning in ALCNR-knowledge
+bases. Our calculus extends the general technique of constraint systems. As a
+byproduct of the proof, we get also the result that inclusion statements in
+ALCNR can be simulated by terminological cycles, if descriptive semantics is
+adopted.
+</summary>
+    <author>
+      <name>M. Buchheit</name>
+    </author>
+    <author>
+      <name>F. M. Donini</name>
+    </author>
+    <author>
+      <name>A. Schaerf</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for any accompanying files</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 1, (1993),
+  109-138</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9312101v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9312101v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9401101v1</id>
+    <updated>1994-01-01T00:00:00Z</updated>
+    <published>1994-01-01T00:00:00Z</published>
+    <title>Teleo-Reactive Programs for Agent Control</title>
+    <summary>  A formalism is presented for computing and organizing actions for autonomous
+agents in dynamic environments. We introduce the notion of teleo-reactive (T-R)
+programs whose execution entails the construction of circuitry for the
+continuous computation of the parameters and conditions on which agent action
+is based. In addition to continuous feedback, T-R programs support parameter
+binding and recursion. A primary difference between T-R programs and many other
+circuit-based systems is that the circuitry of T-R programs is more compact; it
+is constructed at run time and thus does not have to anticipate all the
+contingencies that might arise over all possible runs. In addition, T-R
+programs are intuitive and easy to write and are written in a form that is
+compatible with automatic planning and learning methods. We briefly describe
+some experimental applications of T-R programs in the control of simulated and
+actual mobile robots.
+</summary>
+    <author>
+      <name>N. Nilsson</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for any accompanying files</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 1, (1994),
+  139-158</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9401101v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9401101v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9402101v1</id>
+    <updated>1994-02-01T00:00:00Z</updated>
+    <published>1994-02-01T00:00:00Z</published>
+    <title>Learning the Past Tense of English Verbs: The Symbolic Pattern
+  Associator vs. Connectionist Models</title>
+    <summary>  Learning the past tense of English verbs - a seemingly minor aspect of
+language acquisition - has generated heated debates since 1986, and has become
+a landmark task for testing the adequacy of cognitive modeling. Several
+artificial neural networks (ANNs) have been implemented, and a challenge for
+better symbolic models has been posed. In this paper, we present a
+general-purpose Symbolic Pattern Associator (SPA) based upon the decision-tree
+learning algorithm ID3. We conduct extensive head-to-head comparisons on the
+generalization ability between ANN models and the SPA under different
+representations. We conclude that the SPA generalizes the past tense of unseen
+verbs better than ANN models by a wide margin, and we offer insights as to why
+this should be the case. We also discuss a new default strategy for
+decision-tree learning algorithms.
+</summary>
+    <author>
+      <name>C. X. Ling</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for an online appendix and other files
+  accompanying this article</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 1, (1994),
+  209-229</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9402101v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9402101v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9402102v1</id>
+    <updated>1994-02-01T00:00:00Z</updated>
+    <published>1994-02-01T00:00:00Z</published>
+    <title>Substructure Discovery Using Minimum Description Length and Background
+  Knowledge</title>
+    <summary>  The ability to identify interesting and repetitive substructures is an
+essential component to discovering knowledge in structural data. We describe a
+new version of our SUBDUE substructure discovery system based on the minimum
+description length principle. The SUBDUE system discovers substructures that
+compress the original data and represent structural concepts in the data. By
+replacing previously-discovered substructures in the data, multiple passes of
+SUBDUE produce a hierarchical description of the structural regularities in the
+data. SUBDUE uses a computationally-bounded inexact graph match that identifies
+similar, but not identical, instances of a substructure and finds an
+approximate measure of closeness of two substructures when under computational
+constraints. In addition to the minimum description length principle, other
+background knowledge can be used by SUBDUE to guide the search towards more
+appropriate substructures. Experiments in a variety of domains demonstrate
+SUBDUE's ability to find substructures capable of compressing the original data
+and to discover structural concepts important to the domain. Description of
+Online Appendix: This is a compressed tar file containing the SUBDUE discovery
+system, written in C. The program accepts as input databases represented in
+graph form, and will output discovered substructures with their corresponding
+value.
+</summary>
+    <author>
+      <name>D. J. Cook</name>
+    </author>
+    <author>
+      <name>L. B. Holder</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for an online appendix and other files
+  accompanying this article</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 1, (1994),
+  231-255</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9402102v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9402102v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9402103v1</id>
+    <updated>1994-02-01T00:00:00Z</updated>
+    <published>1994-02-01T00:00:00Z</published>
+    <title>Bias-Driven Revision of Logical Domain Theories</title>
+    <summary>  The theory revision problem is the problem of how best to go about revising a
+deficient domain theory using information contained in examples that expose
+inaccuracies. In this paper we present our approach to the theory revision
+problem for propositional domain theories. The approach described here, called
+PTR, uses probabilities associated with domain theory elements to numerically
+track the ``flow'' of proof through the theory. This allows us to measure the
+precise role of a clause or literal in allowing or preventing a (desired or
+undesired) derivation for a given example. This information is used to
+efficiently locate and repair flawed elements of the theory. PTR is proved to
+converge to a theory which correctly classifies all examples, and shown
+experimentally to be fast and accurate even for deep theories.
+</summary>
+    <author>
+      <name>M. Koppel</name>
+    </author>
+    <author>
+      <name>R. Feldman</name>
+    </author>
+    <author>
+      <name>A. M. Segre</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for any accompanying files</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 1, (1994),
+  159-208</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9402103v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9402103v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9403101v1</id>
+    <updated>1994-03-01T00:00:00Z</updated>
+    <published>1994-03-01T00:00:00Z</published>
+    <title>Exploring the Decision Forest: An Empirical Investigation of Occam's
+  Razor in Decision Tree Induction</title>
+    <summary>  We report on a series of experiments in which all decision trees consistent
+with the training data are constructed. These experiments were run to gain an
+understanding of the properties of the set of consistent decision trees and the
+factors that affect the accuracy of individual trees. In particular, we
+investigated the relationship between the size of a decision tree consistent
+with some training data and the accuracy of the tree on test data. The
+experiments were performed on a massively parallel Maspar computer. The results
+of the experiments on several artificial and two real world problems indicate
+that, for many of the problems investigated, smaller consistent decision trees
+are on average less accurate than the average accuracy of slightly larger
+trees.
+</summary>
+    <author>
+      <name>P. M. Murphy</name>
+    </author>
+    <author>
+      <name>M. J. Pazzani</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for any accompanying files</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 1, (1994),
+  257-275</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9403101v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9403101v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9406101v1</id>
+    <updated>1994-06-01T00:00:00Z</updated>
+    <published>1994-06-01T00:00:00Z</published>
+    <title>A Semantics and Complete Algorithm for Subsumption in the CLASSIC
+  Description Logic</title>
+    <summary>  This paper analyzes the correctness of the subsumption algorithm used in
+CLASSIC, a description logic-based knowledge representation system that is
+being used in practical applications. In order to deal efficiently with
+individuals in CLASSIC descriptions, the developers have had to use an
+algorithm that is incomplete with respect to the standard, model-theoretic
+semantics for description logics. We provide a variant semantics for
+descriptions with respect to which the current implementation is complete, and
+which can be independently motivated. The soundness and completeness of the
+polynomial-time subsumption algorithm is established using description graphs,
+which are an abstracted version of the implementation structures used in
+CLASSIC, and are of independent interest.
+</summary>
+    <author>
+      <name>A. Borgida</name>
+    </author>
+    <author>
+      <name>P. F. Patel-Schneider</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for any accompanying files</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 1, (1994),
+  277-308</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9406101v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9406101v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9406102v1</id>
+    <updated>1994-06-01T00:00:00Z</updated>
+    <published>1994-06-01T00:00:00Z</published>
+    <title>Applying GSAT to Non-Clausal Formulas</title>
+    <summary>  In this paper we describe how to modify GSAT so that it can be applied to
+non-clausal formulas. The idea is to use a particular ``score'' function which
+gives the number of clauses of the CNF conversion of a formula which are false
+under a given truth assignment. Its value is computed in linear time, without
+constructing the CNF conversion itself. The proposed methodology applies to
+most of the variants of GSAT proposed so far.
+</summary>
+    <author>
+      <name>R. Sebastiani</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for any accompanying files</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 1, (1994),
+  309-314</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9406102v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9406102v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9408101v1</id>
+    <updated>1994-08-01T00:00:00Z</updated>
+    <published>1994-08-01T00:00:00Z</published>
+    <title>Random Worlds and Maximum Entropy</title>
+    <summary>  Given a knowledge base KB containing first-order and statistical facts, we
+consider a principled method, called the random-worlds method, for computing a
+degree of belief that some formula Phi holds given KB. If we are reasoning
+about a world or system consisting of N individuals, then we can consider all
+possible worlds, or first-order models, with domain {1,...,N} that satisfy KB,
+and compute the fraction of them in which Phi is true. We define the degree of
+belief to be the asymptotic value of this fraction as N grows large. We show
+that when the vocabulary underlying Phi and KB uses constants and unary
+predicates only, we can naturally associate an entropy with each world. As N
+grows larger, there are many more worlds with higher entropy. Therefore, we can
+use a maximum-entropy computation to compute the degree of belief. This result
+is in a similar spirit to previous work in physics and artificial intelligence,
+but is far more general. Of equal interest to the result itself are the
+limitations on its scope. Most importantly, the restriction to unary predicates
+seems necessary. Although the random-worlds method makes sense in general, the
+connection to maximum entropy seems to disappear in the non-unary case. These
+observations suggest unexpected limitations to the applicability of
+maximum-entropy methods.
+</summary>
+    <author>
+      <name>A. J. Grove</name>
+    </author>
+    <author>
+      <name>J. Y. Halpern</name>
+    </author>
+    <author>
+      <name>D. Koller</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for any accompanying files</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 2, (1994), 33-88</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9408101v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9408101v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9408102v1</id>
+    <updated>1994-08-01T00:00:00Z</updated>
+    <published>1994-08-01T00:00:00Z</published>
+    <title>Pattern Matching and Discourse Processing in Information Extraction from
+  Japanese Text</title>
+    <summary>  Information extraction is the task of automatically picking up information of
+interest from an unconstrained text. Information of interest is usually
+extracted in two steps. First, sentence level processing locates relevant
+pieces of information scattered throughout the text; second, discourse
+processing merges coreferential information to generate the output. In the
+first step, pieces of information are locally identified without recognizing
+any relationships among them. A key word search or simple pattern search can
+achieve this purpose. The second step requires deeper knowledge in order to
+understand relationships among separately identified pieces of information.
+Previous information extraction systems focused on the first step, partly
+because they were not required to link up each piece of information with other
+pieces. To link the extracted pieces of information and map them onto a
+structured output format, complex discourse processing is essential. This paper
+reports on a Japanese information extraction system that merges information
+using a pattern matcher and discourse processor. Evaluation results show a high
+level of system performance which approaches human performance.
+</summary>
+    <author>
+      <name>T. Kitani</name>
+    </author>
+    <author>
+      <name>Y. Eriguchi</name>
+    </author>
+    <author>
+      <name>M. Hara</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for any accompanying files</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 2, (1994), 89-110</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9408102v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9408102v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9408103v1</id>
+    <updated>1994-08-01T00:00:00Z</updated>
+    <published>1994-08-01T00:00:00Z</published>
+    <title>A System for Induction of Oblique Decision Trees</title>
+    <summary>  This article describes a new system for induction of oblique decision trees.
+This system, OC1, combines deterministic hill-climbing with two forms of
+randomization to find a good oblique split (in the form of a hyperplane) at
+each node of a decision tree. Oblique decision tree methods are tuned
+especially for domains in which the attributes are numeric, although they can
+be adapted to symbolic or mixed symbolic/numeric attributes. We present
+extensive empirical studies, using both real and artificial data, that analyze
+OC1's ability to construct oblique trees that are smaller and more accurate
+than their axis-parallel counterparts. We also examine the benefits of
+randomization for the construction of oblique decision trees.
+</summary>
+    <author>
+      <name>S. K. Murthy</name>
+    </author>
+    <author>
+      <name>S. Kasif</name>
+    </author>
+    <author>
+      <name>S. Salzberg</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for an online appendix and other files
+  accompanying this article</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 2, (1994), 1-32</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9408103v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9408103v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9409101v1</id>
+    <updated>1994-09-01T00:00:00Z</updated>
+    <published>1994-09-01T00:00:00Z</published>
+    <title>On Planning while Learning</title>
+    <summary>  This paper introduces a framework for Planning while Learning where an agent
+is given a goal to achieve in an environment whose behavior is only partially
+known to the agent. We discuss the tractability of various plan-design
+processes. We show that for a large natural class of Planning while Learning
+systems, a plan can be presented and verified in a reasonable time. However,
+coming up algorithmically with a plan, even for simple classes of systems is
+apparently intractable. We emphasize the role of off-line plan-design
+processes, and show that, in most natural cases, the verification (projection)
+part can be carried out in an efficient algorithmic manner.
+</summary>
+    <author>
+      <name>S. Safra</name>
+    </author>
+    <author>
+      <name>M. Tennenholtz</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for any accompanying files</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 2, (1994),
+  111-129</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9409101v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9409101v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9412101v1</id>
+    <updated>1994-12-01T00:00:00Z</updated>
+    <published>1994-12-01T00:00:00Z</published>
+    <title>Wrap-Up: a Trainable Discourse Module for Information Extraction</title>
+    <summary>  The vast amounts of on-line text now available have led to renewed interest
+in information extraction (IE) systems that analyze unrestricted text,
+producing a structured representation of selected information from the text.
+This paper presents a novel approach that uses machine learning to acquire
+knowledge for some of the higher level IE processing. Wrap-Up is a trainable IE
+discourse component that makes intersentential inferences and identifies
+logical relations among information extracted from the text. Previous
+corpus-based approaches were limited to lower level processing such as
+part-of-speech tagging, lexical disambiguation, and dictionary construction.
+Wrap-Up is fully trainable, and not only automatically decides what classifiers
+are needed, but even derives the feature set for each classifier automatically.
+Performance equals that of a partially trainable discourse module requiring
+manual customization for each domain.
+</summary>
+    <author>
+      <name>S. Soderland</name>
+    </author>
+    <author>
+      <name>Lehnert. W</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for any accompanying files</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 2, (1994),
+  131-158</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9412101v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9412101v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9412102v1</id>
+    <updated>1994-12-01T00:00:00Z</updated>
+    <published>1994-12-01T00:00:00Z</published>
+    <title>Operations for Learning with Graphical Models</title>
+    <summary>  This paper is a multidisciplinary review of empirical, statistical learning
+from a graphical model perspective. Well-known examples of graphical models
+include Bayesian networks, directed graphs representing a Markov chain, and
+undirected networks representing a Markov field. These graphical models are
+extended to model data analysis and empirical learning using the notation of
+plates. Graphical operations for simplifying and manipulating a problem are
+provided including decomposition, differentiation, and the manipulation of
+probability models from the exponential family. Two standard algorithm schemas
+for learning are reviewed in a graphical framework: Gibbs sampling and the
+expectation maximization algorithm. Using these operations and schemas, some
+popular algorithms can be synthesized from their graphical specification. This
+includes versions of linear regression, techniques for feed-forward networks,
+and learning Gaussian and discrete Bayesian networks from data. The paper
+concludes by sketching some implications for data analysis and summarizing how
+some popular algorithms fall within the framework presented. The main original
+contributions here are the decomposition techniques and the demonstration that
+graphical models provide a framework for understanding and developing complex
+learning algorithms.
+</summary>
+    <author>
+      <name>W. L. Buntine</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for any accompanying files</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 2, (1994),
+  159-225</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9412102v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9412102v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/cs/9412103v1</id>
+    <updated>1994-12-01T00:00:00Z</updated>
+    <published>1994-12-01T00:00:00Z</published>
+    <title>Total-Order and Partial-Order Planning: A Comparative Analysis</title>
+    <summary>  For many years, the intuitions underlying partial-order planning were largely
+taken for granted. Only in the past few years has there been renewed interest
+in the fundamental principles underlying this paradigm. In this paper, we
+present a rigorous comparative analysis of partial-order and total-order
+planning by focusing on two specific planners that can be directly compared. We
+show that there are some subtle assumptions that underly the wide-spread
+intuitions regarding the supposed efficiency of partial-order planning. For
+instance, the superiority of partial-order planning can depend critically upon
+the search strategy and the structure of the search space. Understanding the
+underlying assumptions is crucial for constructing efficient planners.
+</summary>
+    <author>
+      <name>S. Minton</name>
+    </author>
+    <author>
+      <name>J. Bresina</name>
+    </author>
+    <author>
+      <name>M. Drummond</name>
+    </author>
+    <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">See http://www.jair.org/ for an online appendix and other files
+  accompanying this article</arxiv:comment>
+    <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Artificial Intelligence Research, Vol 2, (1994),
+  227-262</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/cs/9412103v1" rel="alternate" type="text/html"/>
+    <link title="pdf" href="http://arxiv.org/pdf/cs/9412103v1" rel="related" type="application/pdf"/>
+    <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+  </entry>
+</feed>

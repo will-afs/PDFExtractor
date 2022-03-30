@@ -1,0 +1,163 @@
+[
+    {
+        "uri": "http://arxiv.org/pdf/cs/9308101v1",
+        "title": "Dynamic Backtracking",
+        "authors": [
+            "M. L. Ginsberg"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9308102v1",
+        "title": "A Market-Oriented Programming Environment and its Application to\n  Distributed Multicommodity Flow Problems",
+        "authors": [
+            "M. P. Wellman"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9309101v1",
+        "title": "An Empirical Analysis of Search in GSAT",
+        "authors": [
+            "I. P. Gent",
+            "T. Walsh"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9311101v1",
+        "title": "The Difficulties of Learning Logic Programs with Cut",
+        "authors": [
+            "F. Bergadano",
+            "D. Gunetti",
+            "U. Trinchero"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9311102v1",
+        "title": "Software Agents: Completing Patterns and Constructing User Interfaces",
+        "authors": [
+            "J. C. Schlimmer",
+            "L. A. Hermens"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9312101v1",
+        "title": "Decidable Reasoning in Terminological Knowledge Representation Systems",
+        "authors": [
+            "M. Buchheit",
+            "F. M. Donini",
+            "A. Schaerf"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9401101v1",
+        "title": "Teleo-Reactive Programs for Agent Control",
+        "authors": [
+            "N. Nilsson"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9402101v1",
+        "title": "Learning the Past Tense of English Verbs: The Symbolic Pattern\n  Associator vs. Connectionist Models",
+        "authors": [
+            "C. X. Ling"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9402102v1",
+        "title": "Substructure Discovery Using Minimum Description Length and Background\n  Knowledge",
+        "authors": [
+            "D. J. Cook",
+            "L. B. Holder"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9402103v1",
+        "title": "Bias-Driven Revision of Logical Domain Theories",
+        "authors": [
+            "M. Koppel",
+            "R. Feldman",
+            "A. M. Segre"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9403101v1",
+        "title": "Exploring the Decision Forest: An Empirical Investigation of Occam's\n  Razor in Decision Tree Induction",
+        "authors": [
+            "P. M. Murphy",
+            "M. J. Pazzani"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9406101v1",
+        "title": "A Semantics and Complete Algorithm for Subsumption in the CLASSIC\n  Description Logic",
+        "authors": [
+            "A. Borgida",
+            "P. F. Patel-Schneider"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9406102v1",
+        "title": "Applying GSAT to Non-Clausal Formulas",
+        "authors": [
+            "R. Sebastiani"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9408101v1",
+        "title": "Random Worlds and Maximum Entropy",
+        "authors": [
+            "A. J. Grove",
+            "J. Y. Halpern",
+            "D. Koller"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9408102v1",
+        "title": "Pattern Matching and Discourse Processing in Information Extraction from\n  Japanese Text",
+        "authors": [
+            "T. Kitani",
+            "Y. Eriguchi",
+            "M. Hara"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9408103v1",
+        "title": "A System for Induction of Oblique Decision Trees",
+        "authors": [
+            "S. K. Murthy",
+            "S. Kasif",
+            "S. Salzberg"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9409101v1",
+        "title": "On Planning while Learning",
+        "authors": [
+            "S. Safra",
+            "M. Tennenholtz"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9412101v1",
+        "title": "Wrap-Up: a Trainable Discourse Module for Information Extraction",
+        "authors": [
+            "S. Soderland",
+            "Lehnert. W"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9412102v1",
+        "title": "Operations for Learning with Graphical Models",
+        "authors": [
+            "W. L. Buntine"
+        ]
+    },
+    {
+        "uri": "http://arxiv.org/pdf/cs/9412103v1",
+        "title": "Total-Order and Partial-Order Planning: A Comparative Analysis",
+        "authors": [
+            "S. Minton",
+            "J. Bresina",
+            "M. Drummond"
+        ]
+    }
+]

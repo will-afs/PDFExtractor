@@ -1,0 +1,410 @@
+[
+    {
+        "raw_ref": [
+            "Cheeseman, P., Kanefsky, B., & Taylor, W. (1991). Where the really hard problems are."
+        ],
+        "author": [
+            "Cheeseman, P., Kanefsky, B., & Taylor, W."
+        ],
+        "misc": [
+            "Where the really hard problems are"
+        ],
+        "year": [
+            "1991"
+        ]
+    },
+    {
+        "raw_ref": [
+            "In Proceedings of the 12th IJCAI, pp. 163{169. International Joint Conference on"
+        ],
+        "misc": [
+            "In Proceedings of the 12th IJCAI, pp. 163{169. International Joint Conference on"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Arti cial Intelligence."
+        ],
+        "misc": [
+            "Arti cial Intelligence"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Crawford, J., & Auton, L. (1993). Experimental results on the crossover point in satisability problems. In Proceedings of the Eleventh National Conference on Arti cial"
+        ],
+        "author": [
+            "Crawford, J., & Auton, L."
+        ],
+        "misc": [
+            "Experimental results on the crossover point in satisability problems. In Proceedings of the Eleventh National Conference on Arti cial"
+        ],
+        "year": [
+            "1993"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Intelligence, pp. 21{27. AAAI Press/The MIT Press."
+        ],
+        "misc": [
+            "Intelligence, pp. 21{27. AAAI Press/The MIT Press"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Gent, I. P., & Walsh, T. (1993). Towards an Understanding of Hill-climbing Procedures for"
+        ],
+        "author": [
+            "Gent, I. P., & Walsh, T."
+        ],
+        "misc": [
+            "Towards an Understanding of Hill-climbing Procedures for"
+        ],
+        "year": [
+            "1993"
+        ]
+    },
+    {
+        "raw_ref": [
+            "SAT. In Proceedings of the Eleventh National Conference on Arti cial Intelligence, pp. 28{33. AAAI Press/The MIT Press."
+        ],
+        "misc": [
+            "SAT. In Proceedings of the Eleventh National Conference on Arti cial Intelligence, pp. 28{33. AAAI Press/The MIT Press"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Gent, I. P., & Walsh, T. (1992). The enigma of SAT hill-climbing procedures. Research paper 605, Dept. of Arti cial Intelligence, University of Edinburgh."
+        ],
+        "author": [
+            "Gent, I. P., & Walsh, T."
+        ],
+        "misc": [
+            "The enigma of SAT hill-climbing procedures. Research paper 605, Dept. of Arti cial Intelligence, University of Edinburgh"
+        ],
+        "year": [
+            "1992"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Gu, J. (1992). E\u000ecient local search for very large-scale satis ability problems. SIGART"
+        ],
+        "misc": [
+            "Gu, J. . Ecient local search for very large-scale satis ability problems. SIGART"
+        ],
+        "year": [
+            "1992"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Bulletin, 3(1)."
+        ],
+        "misc": [
+            "Bulletin, 3(1)"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Hooker, J. N. (1993). Needed: An empirical science of algorithms. Tech. rep., Graduate"
+        ],
+        "author": [
+            "Hooker, J. N."
+        ],
+        "misc": [
+            "Needed: An empirical science of algorithms. Tech. rep., Graduate"
+        ],
+        "year": [
+            "1993"
+        ]
+    },
+    {
+        "raw_ref": [
+            "School of Industrial Administration, Carnegie Mellon University, Pittsburgh PA."
+        ],
+        "misc": [
+            "School of Industrial Administration, Carnegie Mellon University, Pittsburgh PA"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Jerrum, M. (1992). Large cliques elude the Metropolis process. Random Structures and"
+        ],
+        "author": [
+            "Jerrum, M."
+        ],
+        "misc": [
+            "Large cliques elude the Metropolis process. Random Structures and"
+        ],
+        "year": [
+            "1992"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Algorithms, 3(4), 347{359."
+        ],
+        "misc": [
+            "Algorithms, 3(4), 347{359"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Jerrum, M., & Sorkin, G. (1993). Simulated annealing for graph bisection. Tech. rep."
+        ],
+        "author": [
+            "Jerrum, M., & Sorkin, G."
+        ],
+        "misc": [
+            "Simulated annealing for graph bisection. Tech. rep"
+        ],
+        "year": [
+            "1993"
+        ]
+    },
+    {
+        "raw_ref": [
+            "ECS-LFCS-93-260, Department of Computer Science, University of Edinburgh."
+        ],
+        "misc": [
+            "ECS-LFCS-93-260, Department of Computer Science, University of Edinburgh"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Koutsoupias, E., & Papadimitriou, C. H. (1992). On the greedy algorithm for satis ability."
+        ],
+        "author": [
+            "Koutsoupias, E., & Papadimitriou, C. H."
+        ],
+        "misc": [
+            "On the greedy algorithm for satis ability"
+        ],
+        "year": [
+            "1992"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Information Processing Letters, 43, 53{55."
+        ],
+        "journal_title": [
+            "Inform. Proc. Lett."
+        ],
+        "journal_volume": [
+            "43"
+        ],
+        "journal_page": [
+            "53"
+        ],
+        "journal_reference": [
+            "Inform. Proc. Lett. 43 () 53"
+        ],
+        "misc": [
+            "55"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Larrabee, T., & Tsuji, Y. (1992). Evidence for a Satis ability Threshold for Random 3CNF"
+        ],
+        "author": [
+            "Larrabee, T., & Tsuji, Y."
+        ],
+        "misc": [
+            "Evidence for a Satis ability Threshold for Random 3CNF"
+        ],
+        "year": [
+            "1992"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Formulas. Tech. rep. UCSC-CRL-92-42, Baskin Center for Computer Engineering and"
+        ],
+        "misc": [
+            "Formulas. Tech. rep. UCSC-CRL-92-42, Baskin Center for Computer Engineering and"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Information Sciences, University of California, Santa Cruz."
+        ],
+        "misc": [
+            "Information Sciences, University of California, Santa Cruz"
+        ]
+    },
+    {
+        "raw_ref": [
+            "McGeoch, C. (1986). Experimental Analysis of Algorithms. Ph.D. thesis, Carnegie Mellon"
+        ],
+        "author": [
+            "McGeoch, C."
+        ],
+        "misc": [
+            "Experimental Analysis of Algorithms. Ph.D. thesis, Carnegie Mellon"
+        ],
+        "year": [
+            "1986"
+        ]
+    },
+    {
+        "raw_ref": [
+            "University. Also available as CMU-CS-87-124."
+        ],
+        "misc": [
+            "University. Also available as CMU-CS-87-124"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Minton, S., Johnston, M. D., Philips, A. B., & Laird, P. (1990). Solving large-scale constraint satisfaction and scheduling problems using a heuristic repair method. In"
+        ],
+        "author": [
+            "Minton, S., Johnston, M. D."
+        ],
+        "publisher": [
+            "Philips"
+        ],
+        "misc": [
+            "A. B., & Laird, P",
+            "Solving large-scale constraint satisfaction and scheduling problems using a heuristic repair method. In"
+        ],
+        "year": [
+            "1990"
+        ]
+    },
+    {
+        "raw_ref": [
+            "AAAI-90, Proceedings Eighth National Conference on Arti cial Intelligence, pp. 17{"
+        ],
+        "misc": [
+            "AAAI-90, Proceedings Eighth National Conference on Arti cial Intelligence, pp. 17"
+        ]
+    },
+    {
+        "linemarker": [
+            "24"
+        ],
+        "raw_ref": [
+            "24. AAAI Press/MIT Press."
+        ],
+        "misc": [
+            "AAAI Press/MIT Press"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Mitchell, D., Selman, B., & Levesque, H. (1992). Hard and easy distributions of SAT problems. In Proceedings, 10th National Conference on Arti cial Intelligence. AAAI"
+        ],
+        "author": [
+            "Mitchell, D., Selman, B., & Levesque, H."
+        ],
+        "misc": [
+            "Hard and easy distributions of SAT problems. In Proceedings, 10th National Conference on Arti cial Intelligence. AAAI"
+        ],
+        "year": [
+            "1992"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Press/The MIT Press."
+        ],
+        "misc": [
+            "Press/The MIT Press"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Selman, B., & Kautz, H. (1993a). Domain-independent extensions to GSAT: Solving large structured satis ability problems. In Proceedings, IJCAI-93. International Joint Conference on Arti cial Intelligence."
+        ],
+        "author": [
+            "Selman, B., & Kautz, H."
+        ],
+        "misc": [
+            "(a). Domain-independent extensions to GSAT: Solving large structured satis ability problems. In Proceedings, IJCAI-93. International Joint Conference on Arti cial Intelligence"
+        ],
+        "year": [
+            "1993"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Selman, B., & Kautz, H. (1993b). An empirical study of greedy local search for satis ability testing. In Proceedings of the Eleventh National Conference on Arti cial Intelligence, pp. 46{51. AAAI Press/The MIT Press."
+        ],
+        "author": [
+            "Selman, B., & Kautz, H."
+        ],
+        "misc": [
+            "(b). An empirical study of greedy local search for satis ability testing. In Proceedings of the Eleventh National Conference on Arti cial Intelligence, pp. 46{51. AAAI Press/The MIT Press"
+        ],
+        "year": [
+            "1993"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Selman, B., Levesque, H., & Mitchell, D. (1992). A new method for solving hard satis ability problems. In Proceedings, 10th National Conference on Arti cial Intelligence. AAAI"
+        ],
+        "author": [
+            "Selman, B., Levesque, H., & Mitchell, D."
+        ],
+        "misc": [
+            "A new method for solving hard satis ability problems. In Proceedings, 10th National Conference on Arti cial Intelligence. AAAI"
+        ],
+        "year": [
+            "1992"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Press/The MIT Press."
+        ],
+        "misc": [
+            "Press/The MIT Press"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Spears, W. M. (1993). Simulated annealing for hard satis ability problems. Tech. rep."
+        ],
+        "author": [
+            "Spears, W. M."
+        ],
+        "misc": [
+            "Simulated annealing for hard satis ability problems. Tech. rep"
+        ],
+        "year": [
+            "1993"
+        ]
+    },
+    {
+        "raw_ref": [
+            "AIC-93-015, AI Center, Naval Research Laboratory. van Laarhoven, P., & Aarts, E. (1987). Simulated Annealing: Theory and Applications. D."
+        ],
+        "misc": [
+            "AIC-93-015, AI Center, Naval Research Laboratory",
+            "Simulated Annealing: Theory and Applications. D"
+        ],
+        "author": [
+            "van Laarhoven, P., & Aarts, E."
+        ],
+        "year": [
+            "1987"
+        ]
+    },
+    {
+        "raw_ref": [
+            "Reidel Publishing Company, Dordrecht, Holland."
+        ],
+        "publisher": [
+            "Reidel"
+        ],
+        "misc": [
+            "Publishing Company, Dordrecht, Holland"
+        ]
+    }
+]
