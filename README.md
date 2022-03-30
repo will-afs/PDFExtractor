@@ -1,2 +1,2 @@
 # PDFExtractor
-Extract data from a scientific article (PDF)
+Extract data from scientific articles (PDF)
