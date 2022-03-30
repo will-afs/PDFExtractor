@@ -33,17 +33,25 @@ def extract_pdf(pdf_metadata:dict, cooldown_manager_uri:str) -> dict:
     """Extract the references of a PDF and aggregates them to the PDF metadata
 
     Parameters:
-    pdf_metadata (dict) : the PDF metadata (as: {
-        'uri':str,
-        'authors':list<str>,
-        'title':str,
-        'references': list<dict>,
-    } with references: list<{'authors:list<str>}>)
+    pdf_metadata (dict) : the PDF metadata
+        as: {
+                'uri':str,
+                'authors':list<str>,
+                'title':str
+            }
+
     cooldown_manager_uri (str) : the URI through which ask permission to CooldownManager\
         to request ArXiv.org services
 
     Returns:
-    dict: Text PDF metadata and references as a dictionnary
+    dict: the PDF extracted data
+        as: {
+                'uri':str,
+                'authors':list<str>,
+                'title':str,
+                'references': list<dict>,
+            }
+        with references: list<{'authors:list<str>}>
     """
     # 1 - Initialize the PDF dictionnary to return
     pdf_dict = {
@@ -51,7 +59,6 @@ def extract_pdf(pdf_metadata:dict, cooldown_manager_uri:str) -> dict:
         'authors':pdf_metadata['authors'],
         'title':pdf_metadata['title'],
         'references': [],
-
     }
 
     # 2 - Extract references

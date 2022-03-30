@@ -1,0 +1,104 @@
+{
+    "uri": "http://arxiv.org/pdf/cs/9308101v1",
+    "authors": [
+        "M. L. Ginsberg"
+    ],
+    "title": "Dynamic Backtracking",
+    "references": [
+        {
+            "authors": [
+                "Bruynooghe, M."
+            ]
+        },
+        {
+            "authors": [
+                "Information Processing Letters, 12(1), 36{39. de Kleer, J."
+            ]
+        },
+        {
+            "authors": [
+                "Dechter, R.",
+                "Meiri, I."
+            ]
+        },
+        {
+            "authors": [
+                "Gaschnig, J."
+            ]
+        },
+        {
+            "authors": [
+                "Ginsberg, M. L.",
+                "Frank, M.",
+                "Halpin, M. P.",
+                "Torrance, M. C."
+            ]
+        },
+        {
+            "authors": [
+                "Ginsberg, M. L.",
+                "Harvey, W. D."
+            ]
+        },
+        {
+            "authors": [
+                "Jonsson, A. K.",
+                "Ginsberg, M. L."
+            ]
+        },
+        {
+            "authors": [
+                "McAllester, D. A."
+            ]
+        },
+        {
+            "authors": [
+                "Minton, S.",
+                "Johnston, M. D.",
+                "Philips, A. B.",
+                "Laird, P."
+            ]
+        },
+        {
+            "authors": [
+                "P. Purdom, C. B.",
+                "Robertson, E."
+            ]
+        },
+        {
+            "authors": [
+                "Seidel, R."
+            ]
+        },
+        {
+            "authors": [
+                "Selman, B.",
+                "Levesque, H.",
+                "Mitchell, D."
+            ]
+        },
+        {
+            "authors": [
+                "Smith, D. E.",
+                "Genesereth, M. R."
+            ]
+        },
+        {
+            "authors": [
+                "Stallman, R. M.",
+                "Sussman, G. J."
+            ]
+        },
+        {
+            "authors": [
+                "Zabih, R."
+            ]
+        },
+        {
+            "authors": [
+                "Zabih, R.",
+                "McAllester, D. A."
+            ]
+        }
+    ]
+}

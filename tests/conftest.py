@@ -27,6 +27,7 @@ CLEAN_REFERENCES_REFERENCE_FILE_NAME = config["REFERENCES"]["CLEAN_REFERENCES_RE
 REFEXTRACT_REFERENCES_REFERENCE_FILE_NAME = config["REFERENCES"]["REFEXTRACT_REFERENCES_REFERENCE_FILE_NAME"]
 APA_RAW_REF_VALUE = config["REFERENCES"]["APA_RAW_REF_VALUE"]
 UNKNOWN_RAW_REF_VALUE = config["REFERENCES"]["UNKNOWN_RAW_REF_VALUE"]
+EXTRACT_PDF_RESULT_REFERENCE = config["REFERENCES"]["EXTRACT_PDF_RESULT_REFERENCE"]
 
 # [Cooldown Manager]
 COOLDOWN_MANAGER_URI = config['Cooldown Manager']['cooldown_manager_uri']
@@ -49,3 +50,20 @@ def refextract_references_reference():
     with open(DATA_FILE_PATH + REFEXTRACT_REFERENCES_REFERENCE_FILE_NAME, "r") as refextract_references_reference_file:
         refextract_references_reference = json.load(refextract_references_reference_file)
     return refextract_references_reference
+
+@pytest.fixture
+def extract_pdf_result_reference():
+    with open(DATA_FILE_PATH + EXTRACT_PDF_RESULT_REFERENCE, "r") as extract_pdf_result_reference_file:
+        extract_pdf_result_reference = json.load(extract_pdf_result_reference_file)
+    return extract_pdf_result_reference
+
+@pytest.fixture
+def correct_event():
+    return {
+        "uri":"http://arxiv.org/pdf/cs/9308101v1",
+        "title":"Dynamic Backtracking",
+        "authors": [
+            "Matthew L. Ginsberg",
+        ]
+    }
+    

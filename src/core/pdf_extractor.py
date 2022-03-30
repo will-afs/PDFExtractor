@@ -1,60 +1,46 @@
-from src.pdfextractor.core.pdf_extractor_utils import extract_pdf
+from src.core.pdf_extractor_utils import extract_pdf
 
-import celery
 import json
-from os import path
-import sys
 import toml
-from typing import List
+import validators
 
 config = toml.load('settings/config.toml')
-broker_url = config['PDFExtractor']['broker_url']
-backend_url = config['PDFExtractor']['backend_url']
 cooldown_manager_uri = config['Cooldown Manager']['cooldown_manager_uri']
-
-app = celery.Celery(
-                'pdf_extractor',
-                broker=broker_url,
-                backend=backend_url,
-            )
-
-@app.task
-def extract_pdf_task(pdf_metadata:dict, erase_file=True) -> List:
-    pdf_urn = pdf_metadata['uri'].replace('http://arxiv.org/pdf/cs/', '')
-    if not erase_file and (path.exists('results/errors/'+pdf_urn) or path.exists('results/success/'+pdf_urn)):
-        return 'File \"' + pdf_urn + '\" alredy exists'
-    else:
-        # try:
-        pdf_dict = extract_pdf(pdf_metadata, cooldown_manager_uri)
-        # except AuthorsExtractionError as err:
-        #     # Storing the pdf_metadata that lead to an error to debug it
-        #     pdf_metadata['unsupported_raw_ref'] = str(err)
-        #     json_object = json.dumps(pdf_metadata, indent = 4)
-        #     with open("results/errors.json".format(pdf_urn), "a") as outfile:
-        #         outfile.write(json_object)
-        #     return '\nExtraction failed for PDF with metadata \"' + json.dumps(pdf_metadata) + '\"\n'
-        json_object = json.dumps(pdf_dict, indent = 4)
-        with open("results/success/{}.json".format(pdf_urn), "w") as outfile:
-            outfile.write(json_object)
-        return 'Successfuly extracted PDF with URN \"' + pdf_urn + '\"'
 
 def lambda_handler(event, context):
     # 1 - parse query parameters
-    pdf_metadata = event['queryStringParameters']['pdf_metadata']
-
-    # 2 - construct the body of the response object
-    pdf_dict = extract_pdf(pdf_metadata, cooldown_manager_uri)
-    
+    if not validators.url(event['uri']):
+        status = 400
+        message = "Incorrect format for \'uri\' argument. Expected an url-like string"
+        body = {}
+    elif type(event['title'])!=str:
+        status = 400
+        message = "Incorrect format for \'title\' argument. Expected a string"
+        body = {}
+    elif type(event['authors'])!=list:
+        status = 400
+        message = "Incorrect format for \'authors\' argument. Expected a list of strings"
+        body = {}
+    else:  
+        pdf_metadata = {
+                    'uri':event['uri'],
+                    'title':event['title'],
+                    'authors':event['authors'],
+                }
+        # 2 - construct the body of the response object
+        pdf_dict = extract_pdf(pdf_metadata, cooldown_manager_uri)
+        status = 200
+        message = 'Success'
+        body = pdf_dict
     # 3 - construct the http response
     http_response = {
-        'status':200,
+        'status':status,
         'headers':{
             'Content-Type':'application/json'
         },
-        'body': json.dumps(pdf_dict)
+        'message':message,
+        'body': body
+
     }
     # 4 - return the http response
     return http_response
-
-if __name__ == '__main__':
-    app.start()
