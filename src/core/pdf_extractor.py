@@ -56,3 +56,13 @@ def lambda_handler(event, context):
     }
     # 4 - return the http response
     return http_response
+
+if __name__ == '__main__':
+    event = {
+        "uri": "http://arxiv.org/pdf/cs/9308101v1",
+        "title": "Dynamic Backtracking",
+        "authors": [
+            "M. L. Ginsberg"
+        ]
+    }
+    print(lambda_handler(event,''))

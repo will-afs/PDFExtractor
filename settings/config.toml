@@ -2,4 +2,4 @@
 title = "Project default configuration"
 
 ["Cooldown Manager"]
-cooldown_manager_uri = "http://172.17.0.2:5000/"
+cooldown_manager_uri = "http://15.188.144.230:80/"
