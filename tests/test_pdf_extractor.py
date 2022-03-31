@@ -1,6 +1,9 @@
 from src.core.pdf_extractor import lambda_handler
 from tests.conftest import WRONG_PDF_URI
 
+import pytest
+from refextract.references.errors import UnknownDocumentTypeError
+
 def test_lambda_handler(mocker, extract_pdf_result_reference, correct_event):
     # Correct event
     mocker.patch('src.core.pdf_extractor.extract_pdf', return_value = extract_pdf_result_reference)
@@ -29,3 +32,31 @@ def test_lambda_handler(mocker, extract_pdf_result_reference, correct_event):
         assert response['status'] == 400
         assert len(response['message']) != 0
         assert response['body'] == {}
+    # Facing ConnectionRefusedError
+    mocker.patch(
+        'src.core.pdf_extractor.extract_pdf',
+        side_effects = ConnectionRefusedError
+    )
+    response = lambda_handler(correct_event,'')
+    expected_response = {
+        'status':502,
+        'headers':{
+            'Content-Type':'application/json'
+        },
+        'message':'Internal service CooldownManager did not allow to request ArXiv.org services',
+        'body': {}
+    }
+    # Facing UnknownDocumentTypeError
+    mocker.patch(
+        'src.core.pdf_extractor.extract_pdf',
+        side_effects = UnknownDocumentTypeError
+    )
+    response = lambda_handler(correct_event,'')
+    expected_response = {
+        'status':400,
+        'headers':{
+            'Content-Type':'application/json'
+        },
+        'message':'Please provide an URI pointing to a PDF',
+        'body': {}
+    }

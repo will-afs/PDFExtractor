@@ -4,6 +4,8 @@ import json
 import toml
 import validators
 
+from refextract.references.errors import UnknownDocumentTypeError
+
 config = toml.load('settings/config.toml')
 cooldown_manager_uri = config['Cooldown Manager']['cooldown_manager_uri']
 
@@ -28,10 +30,20 @@ def lambda_handler(event, context):
                     'authors':event['authors'],
                 }
         # 2 - construct the body of the response object
-        pdf_dict = extract_pdf(pdf_metadata, cooldown_manager_uri)
-        status = 200
-        message = 'Success'
-        body = pdf_dict
+        try:
+            pdf_dict = extract_pdf(pdf_metadata, cooldown_manager_uri)
+        except ConnectionRefusedError:
+            status = 502
+            message = 'Internal service CooldownManager did not allow to request ArXiv.org services'
+            body = {}
+        except UnknownDocumentTypeError:
+            status = 400
+            message = 'Please provide an URI pointing to a PDF'
+            body = {}
+        else:
+            status = 200
+            message = 'Success'
+            body = pdf_dict
     # 3 - construct the http response
     http_response = {
         'status':status,
