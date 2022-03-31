@@ -28,7 +28,7 @@ Build a Docker image :
 ---------
 You can now run the Docker image as a container :
 
-    sudo docker build --tag pdfextractor .
+    sudo docker run -p 9000:8080 pdfextractor:latest
 
 By default, the entrypoint of the function to embed in AWS-Lambda will be : http://localhost:9000/2015-03-31/functions/function/invocations
 
@@ -42,6 +42,10 @@ You should obtain the following answer :
 (optionnal) You can also push the Docker image to your own registry :
 
     sudo docker push <your_docker_user_name>/pdfextractor
+    
+(optionnal) And work directly with Docker images stored in that registry :
+
+    sudo docker run -p 9000:8080 <your_docker_user_name>/pdfextractor:latest
     
 🧪 Running tests
 -----------------
