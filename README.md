@@ -58,21 +58,6 @@ The tests are placed in the tests folder. They can be ran with pytests, as follo
 
     python -m pytest tests
 
-▶️ Usage
----------
-You can now run the Docker image as a container :
-
-    sudo docker run -p 9000:8080 pdfextractor:latest
-
-By default, the entrypoint of the function to embed in AWS-Lambda will be : http://localhost:9000/2015-03-31/functions/function/invocations
-
-You can request it locally, for instance from a terminal :
-
-    curl -X POST "http://localhost:9000/2015-03-31/functions/function/invocations" -d "{\"uri\":\"http://arxiv.org/pdf/cs/9308101v1\",\"title\":\"DynamicBacktracking\",\"authors\":[\"M.L.Ginsberg\"]}"
-
-You should obtain the following answer :
-
-
  🐋 Containerizing the application 
 ----------------------------------
 To build a Docker image :
