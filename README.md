@@ -83,20 +83,25 @@ You can now run the Docker image as a container :
 ---------------------------
 Connect to AWS via your web browser
 
-Create a Container Registry for this project
+Create a Container Registry for this project, and retrieve its URI and region. For example:
 
-Make sure your AWS CLI is correctly configured (sudo is needed here if you need to run the following commands as sudo):
+    849663779938.dkr.ecr.eu-west-3.amazonaws.com/pdfextractor:latest
+    eu-west-3
+
+From your CLI, make sure your AWS CLI is correctly configured (sudo is needed here if you need to run the following commands as sudo):
 
     sudo aws configure
 
 Retrieve an AWS authentication token and authenticate your Docker client to your registry:
 
-    sudo aws ecr get-login-password --region eu-west-3 | sudo docker login --username AWS --password-stdin 849663779938.dkr.ecr.eu-west-3.amazonaws.com
+    sudo aws ecr get-login-password --region <your_region> | sudo docker login --username AWS --password-stdin <your_ecr_uri>
 
 Make sure you have build a Docker image for the application (see how above)
 
+After the build is complete, tag your image so you can push the image to your AWS ECR:
+
+    sudo docker tag <your_docker_username>/pdfextractor:latest <your_ecr_uri>
+
 Push your docker image to your AWS ECR. Example:
 
-    sudo docker push 849663779938.dkr.ecr.eu-west-3.amazonaws.com/pdfextractor:latest
-
-
+    sudo docker push <your_ecr_uri>/pdfextractor:latest
