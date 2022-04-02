@@ -78,3 +78,25 @@ Pushing the Docker image to your registry :
 You can now run the Docker image as a container :
 
     sudo docker run -d -p 80:80 pdfextractor
+    
+☁️ Deploying on AWS Lambda
+---------------------------
+Connect to AWS via your web browser
+
+Create a Container Registry for this project
+
+Make sure your AWS CLI is correctly configured (sudo is needed here if you need to run the following commands as sudo):
+
+    sudo aws configure
+
+Retrieve an AWS authentication token and authenticate your Docker client to your registry:
+
+    sudo aws ecr get-login-password --region eu-west-3 | sudo docker login --username AWS --password-stdin 849663779938.dkr.ecr.eu-west-3.amazonaws.com
+
+Make sure you have build a Docker image for the application (see how above)
+
+Push your docker image to your AWS ECR. Example:
+
+    sudo docker push 849663779938.dkr.ecr.eu-west-3.amazonaws.com/pdfextractor:latest
+
+
