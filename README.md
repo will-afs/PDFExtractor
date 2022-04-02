@@ -1,7 +1,7 @@
-# <img src="https://github.com/will-afs/PDFExtractor/blob/main/doc/img/pickaxe.png" width="30"> PDFExtractor
+# <img src="https://github.com/will-afs/AdvancedAcademicProject/blob/main/doc/Icons/PDFExtractor.png" width="30"> PDFExtractor
 Extract data from scientific articles (PDF)
 
-<img src="https://github.com/will-afs/PDFExtractor/blob/main/doc/img/PDFExtractor%20architecture.JPG" width="700">
+<img src="https://github.com/will-afs/AdvancedAcademicProject/blob/main/doc/Deployment%20architecture/PDFExtractor/PDFExtractor%20architecture.JPG" width="700">
 
 This is a sub-project of the [AdvancedAcademicProject](https://github.com/will-afs/AdvancedAcademicProject/)
 
