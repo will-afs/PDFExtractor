@@ -13,6 +13,9 @@ Please check the 'cooldown_manager_uri' in it is correct, so that the Cooldown M
 
 🐇 Quickly run the service as a container
 ------------------------------------------
+[<img src="https://github.com/will-afs/AdvancedAcademicProject/blob/main/doc/Icons/CooldownManager.png" width="30"> Cooldown Manager service](https://github.com/will-afs/CooldownManager) must be launched first
+
+*Note : It is possible to run both of these services on different machines*
 
     sudo docker run -p 9000:8080 williamafonso/pdfextractor:latest
     
