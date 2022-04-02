@@ -105,3 +105,34 @@ After the build is complete, tag your image so you can push the image to your AW
 Push your docker image to your AWS ECR. Example:
 
     sudo docker push <your_ecr_uri>/pdfextractor:latest
+    
+Create an AWS Lambda function, selecting Lambda from "image"
+
+Test it with the following request body:
+
+    {
+        "uri": "http://arxiv.org/pdf/cs/9308102v1",
+        "title": "Dynamic Backtracking",
+        "authors": [
+            "M. L. Ginsberg"
+        ]
+    }
+
+Create a trigger:
+- "API Gateway"
+- API: "Create an API"
+- API type: "REST API"
+- Security: "Open"
+- Create a new role 'BasicLambdaRole'
+
+Once the trigger is created, select it, create a POST method for this ressource, and deploy the API
+
+If Lambda integration is selected, unselect it
+
+You should now be able to test the API from the AWS console (use the request body provided above)
+
+Now, deploy the API so that it can be reached from the internet
+
+You should now be able to test the API from a CLI. For example:
+
+    curl -X POST "https://lbninhtxlc.execute-api.eu-west-3.amazonaws.com/beta/test-function" -d "{\"uri\":\"http://arxiv.org/pdf/cs/9308101v1\",\"title\":\"DynamicBacktracking\",\"authors\":[\"M.L.Ginsberg\"]}"
