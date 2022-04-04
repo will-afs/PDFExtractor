@@ -1,8 +1,9 @@
 from src.cooldown_manager_utils import get_permission_to_request_arxiv
-
-from enum import Enum
-import re
+# from src.core.refextract_in_memory_utils import extract_references_from_url
 from refextract import extract_references_from_url
+from enum import Enum
+from urllib.error import URLError
+import re
 import validators
 
 def extract_references_from_pdf_uri(pdf_uri:str, cooldown_manager_uri:str)->list:
@@ -21,13 +22,19 @@ def extract_references_from_pdf_uri(pdf_uri:str, cooldown_manager_uri:str)->list
                             "Wrong URI format for 'pdf_uri' argument.\
                             Expected an url-like string. Example 'http://arxiv.org/pdf/cs/9308101v1'"
                         )
-    elif get_permission_to_request_arxiv(cooldown_manager_uri):
-        try:
-            return extract_references_from_url(pdf_uri)
-        except:
-            return []
+    try:
+        permission_to_request_arxiv = get_permission_to_request_arxiv(cooldown_manager_uri)
+    except URLError:
+        raise URLError("Could not reach Cooldown Manager with URL \'"+cooldown_manager_uri+"\'")
     else:
-        raise ConnectionRefusedError('CooldownManager refused permission to connect to ArXiv.org')
+        if permission_to_request_arxiv:
+            try:
+                references =  extract_references_from_url(pdf_uri)
+            except:
+                references = []
+        else:
+            raise ConnectionRefusedError('CooldownManager refused permission to connect to ArXiv.org')
+    return references
 
 def extract_pdf(pdf_metadata:dict, cooldown_manager_uri:str) -> dict:
     """Extract the references of a PDF and aggregates them to the PDF metadata
@@ -60,12 +67,10 @@ def extract_pdf(pdf_metadata:dict, cooldown_manager_uri:str) -> dict:
         'title':pdf_metadata['title'],
         'references': [],
     }
-
     # 2 - Extract references
     extracted_references = extract_references_from_pdf_uri(pdf_metadata['uri'], cooldown_manager_uri)
     if len(extracted_references) == 0:
         return pdf_dict
-
     # 3 - Predict PDF References style
     ref_style = predict_ref_style(extracted_references[0]['raw_ref'][0])
     if ref_style == RefStyle.Unknown:
@@ -155,8 +160,11 @@ if __name__ == '__main__':
     pdf_metadata = {
         "uri": "http://arxiv.org/pdf/cs/9308102v1",
         "title": "A Market-Oriented Programming Environment and its Application to\n  Distributed Multicommodity Flow Problems",
-        "authors": ["M. P. Wellman"]
-        }
-    coooldown_manager_uri = "http://172.17.0.2:5000/"
+        "authors": [
+            "M. P. Wellman"
+        ]
+    }
+    coooldown_manager_uri = "http://15.188.144.230:80/" #"http://172.17.0.2:5000/"
     pdf_dict = extract_pdf(pdf_metadata, coooldown_manager_uri)
+    print(pdf_dict)
     
