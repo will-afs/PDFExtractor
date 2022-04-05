@@ -1,5 +1,2 @@
 # Keys
 title = "Project default configuration"
-
-["Cooldown Manager"]
-cooldown_manager_uri = "http://15.188.144.230:80/"

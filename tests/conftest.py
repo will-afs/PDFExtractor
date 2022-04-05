@@ -29,9 +29,6 @@ APA_RAW_REF_VALUE = config["REFERENCES"]["APA_RAW_REF_VALUE"]
 UNKNOWN_RAW_REF_VALUE = config["REFERENCES"]["UNKNOWN_RAW_REF_VALUE"]
 EXTRACT_PDF_RESULT_REFERENCE = config["REFERENCES"]["EXTRACT_PDF_RESULT_REFERENCE"]
 
-# [Cooldown Manager]
-COOLDOWN_MANAGER_URI = config['Cooldown Manager']['cooldown_manager_uri']
-
 
 @pytest.fixture
 def pdf_metadatas_reference():

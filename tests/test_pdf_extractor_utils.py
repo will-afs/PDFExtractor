@@ -7,7 +7,6 @@ from tests.conftest import (
                         PDF_CONTENT_REFERENCE_FILE_NAME,
                         PDF_METADATA_REFERENCE_FILE_NAME,
                         WRONG_PDF_URI,
-                        COOLDOWN_MANAGER_URI,
                         APA_RAW_REF_VALUE,
                         UNKNOWN_RAW_REF_VALUE
 )
@@ -26,20 +25,15 @@ from unittest.mock import Mock
 def test_extract_references_from_pdf_uri(mocker):
     # Check raises ValueError when uncorrect pdf_uri format
     with pytest.raises(ValueError):
-        extract_references_from_pdf_uri(WRONG_PDF_URI, COOLDOWN_MANAGER_URI)
-    # Check raise ConnectionRefusedError when no permission from CooldownManager
-    mocker.patch('src.core.pdf_extractor_utils.get_permission_to_request_arxiv', return_value = False)
-    with pytest.raises(ConnectionRefusedError):
-        extract_references_from_pdf_uri(PDF_URI, COOLDOWN_MANAGER_URI)
+        extract_references_from_pdf_uri(WRONG_PDF_URI)
     # Check success
-    mocker.patch('src.core.pdf_extractor_utils.get_permission_to_request_arxiv', return_value = True)
     dummy_references_list = [{'authors':['Cheeseman, P.', 'Kanefsky, B.']}]
     mock = mocker.patch('src.core.pdf_extractor_utils.extract_references_from_url', return_value = dummy_references_list)
-    assert extract_references_from_pdf_uri(PDF_URI, COOLDOWN_MANAGER_URI) == dummy_references_list
+    assert extract_references_from_pdf_uri(PDF_URI) == dummy_references_list
     # Check return empty list when error raised by extract_references_from_url
-    mock = mocker.patch('src.core.pdf_extractor_utils.extract_references_from_url', return_value = '')
-    mock.side_effect=Exception('foo')
-    assert extract_references_from_pdf_uri(PDF_URI, COOLDOWN_MANAGER_URI) == []
+    mocker.patch('src.core.pdf_extractor_utils.extract_references_from_url', side_effect=Exception('foo'))
+    with pytest.raises(Exception):
+        extract_references_from_pdf_uri(PDF_URI)
 
 def test_predict_ref_style():
     # Style APA
@@ -49,11 +43,11 @@ def test_predict_ref_style():
     raw_ref = UNKNOWN_RAW_REF_VALUE
     assert predict_ref_style(raw_ref) == RefStyle.Unknown
 
-def test_extract_pdf(pdf_metadatas_reference, clean_references_reference, refextract_references_reference, mocker):
+def test_extract_pdf(pdf_metadatas_reference, refextract_references_reference, mocker):
     # Check when success
     pdf_metadata_id = 11
     mocker.patch('src.core.pdf_extractor_utils.extract_references_from_pdf_uri', return_value = refextract_references_reference)
-    pdf_metadata = extract_pdf(pdf_metadatas_reference[pdf_metadata_id], COOLDOWN_MANAGER_URI)
+    pdf_metadata = extract_pdf(pdf_metadatas_reference[pdf_metadata_id])
     assert list(pdf_metadata.keys()) == ['uri', 'authors', 'title', 'references']
     assert pdf_metadata['uri'] == pdf_metadatas_reference[pdf_metadata_id]['uri']
     assert pdf_metadata['authors'] == pdf_metadatas_reference[pdf_metadata_id]['authors']
@@ -63,20 +57,20 @@ def test_extract_pdf(pdf_metadatas_reference, clean_references_reference, refext
         'Selman, B.',
         'Levesque, H.'
     ]
+    
+    # Check when unknown reference style
+    mocker.patch('src.core.pdf_extractor_utils.predict_ref_style', return_value = RefStyle.Unknown)
+    pdf_metadata = extract_pdf(pdf_metadatas_reference[pdf_metadata_id])
+    assert pdf_metadata['uri'] == pdf_metadatas_reference[pdf_metadata_id]['uri']
+    assert pdf_metadata['authors'] == pdf_metadatas_reference[pdf_metadata_id]['authors']
+    assert pdf_metadata['title'] == pdf_metadatas_reference[pdf_metadata_id]['title']
+    assert pdf_metadata['references'] == []
+
     # Check when no reference found
     mocker.patch('src.core.pdf_extractor_utils.extract_references_from_pdf_uri', return_value = [])
     pdf_metadata_id = 0
-    pdf_metadata = extract_pdf(pdf_metadatas_reference[pdf_metadata_id], COOLDOWN_MANAGER_URI)
-    assert pdf_metadata['uri'] == pdf_metadatas_reference[pdf_metadata_id]['uri']
-    assert pdf_metadata['authors'] == pdf_metadatas_reference[pdf_metadata_id]['authors']
-    assert pdf_metadata['title'] == pdf_metadatas_reference[pdf_metadata_id]['title']
-    assert pdf_metadata['references'] == []
-    # Check when unkown reference style
-    mocker.patch('src.core.pdf_extractor_utils.predict_ref_style', RefStyle.Unknown)
-    assert pdf_metadata['uri'] == pdf_metadatas_reference[pdf_metadata_id]['uri']
-    assert pdf_metadata['authors'] == pdf_metadatas_reference[pdf_metadata_id]['authors']
-    assert pdf_metadata['title'] == pdf_metadatas_reference[pdf_metadata_id]['title']
-    assert pdf_metadata['references'] == []
+    with pytest.raises(Exception):
+        extract_pdf(pdf_metadatas_reference[pdf_metadata_id])
 
 def test_extract_authors_from_ref(mocker):
     # Checking with RefStyle.Unknown

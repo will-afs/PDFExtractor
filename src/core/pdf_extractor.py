@@ -1,14 +1,11 @@
 from src.core.pdf_extractor_utils import extract_pdf
 
-import json
 from refextract.references.errors import FullTextNotAvailableError, UnknownDocumentTypeError
 import toml
 import traceback
 from urllib.error import URLError
 import validators
 
-config = toml.load('settings/config.toml')
-cooldown_manager_uri = config['Cooldown Manager']['cooldown_manager_uri']
 
 def lambda_handler(event, context):
     # 1 - parse query parameters
@@ -34,7 +31,7 @@ def lambda_handler(event, context):
                     }
             # 2 - construct the body of the response object
             try:
-                pdf_dict = extract_pdf(pdf_metadata, cooldown_manager_uri)
+                pdf_dict = extract_pdf(pdf_metadata)
             except URLError as err: # Cooldown Manager not reachable
                 status = 502
                 message = str(err)
