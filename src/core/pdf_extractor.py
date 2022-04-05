@@ -3,6 +3,7 @@ from src.core.pdf_extractor_utils import extract_pdf
 import json
 from refextract.references.errors import FullTextNotAvailableError, UnknownDocumentTypeError
 import toml
+import traceback
 from urllib.error import URLError
 import validators
 
@@ -50,9 +51,9 @@ def lambda_handler(event, context):
                 status = 400
                 message = 'Please provide an URI pointing to a PDF'
                 body = {}
-            except Exception as err:
+            except Exception as exc:
                 status = 500
-                message = 'An internal error occured: '+str(err)
+                message = 'An internal error occured: '+str(exc)+', traceback:\n{}'.format(traceback.format_exc())
                 body = {}
             else:
                 status = 200
