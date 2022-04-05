@@ -108,7 +108,10 @@ Push your docker image to your AWS ECR. Example:
     
 Create an AWS Lambda function, selecting Lambda from "image"
 
-Test it with the following request body:
+Add a VPC to AWS Lambda to enable it communicating with other applications from within (Cooldown Manager, ArXivParser). 
+You might need to edit the Lambda-role by adding a new policy (e.g. AmazonEC2FullAccess).
+
+Now test it with the following request body:
 
     {
         "uri": "http://arxiv.org/pdf/cs/9308102v1",
