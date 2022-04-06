@@ -77,7 +77,7 @@ Pushing the Docker image to your registry :
 
 You can now run the Docker image as a container :
 
-    sudo docker run -d -p 80:80 pdfextractor
+    sudo docker run -p 9000:8080 pdfextractor:latest
     
 ☁️ Deploying on AWS Lambda
 ---------------------------
