@@ -9,13 +9,8 @@ This is a sub-project of the [AdvancedAcademicProject](https://github.com/will-a
 -----------------
 The project configuration holds in the [settings/config.toml file](https://github.com/will-afs/PDFExtractor/blob/main/settings/config.toml)
 
-Please check the 'cooldown_manager_uri' in it is correct, so that the Cooldown Manager can be reached
-
 🐇 Quickly run the service as a container
 ------------------------------------------
-[<img src="https://github.com/will-afs/AdvancedAcademicProject/blob/main/doc/Icons/CooldownManager.png" width="30"> Cooldown Manager service](https://github.com/will-afs/CooldownManager) must be launched first
-
-*Note : It is possible to run both of these services on different machines*
 
     sudo docker run -p 9000:8080 williamafonso/pdfextractor:latest
     
@@ -77,7 +72,7 @@ Pushing the Docker image to your registry :
 
     sudo docker push <your_docker_user_name>/pdfextractor
 
-You can now run the Docker image as a container :
+You can now run the Docker image locally as a container :
 
     sudo docker run -p 9000:8080 pdfextractor:latest
     
@@ -110,7 +105,7 @@ Push your docker image to your AWS ECR. Example:
     
 Create an AWS Lambda function, selecting Lambda from "image"
 
-Add a VPC to AWS Lambda to enable it communicating with other applications from within (Cooldown Manager, ArXivParser). 
+Add a VPC to AWS Lambda to enable it communicating with other applications from within (ArXivParser). 
 You might need to edit the Lambda-role by adding a new policy (e.g. AmazonEC2FullAccess).
 
 Now test it with the following request body:
