@@ -11,6 +11,7 @@ from tests.conftest import (
                         UNKNOWN_RAW_REF_VALUE
 )
 from src.core.pdf_extractor_utils import (
+    UnknownRefStyle,
     extract_pdf,
     extract_authors_from_apa_ref,
     extract_references_from_pdf_uri,
@@ -60,12 +61,9 @@ def test_extract_pdf(pdf_metadatas_reference, refextract_references_reference, m
     
     # Check when unknown reference style
     mocker.patch('src.core.pdf_extractor_utils.predict_ref_style', return_value = RefStyle.Unknown)
-    pdf_metadata = extract_pdf(pdf_metadatas_reference[pdf_metadata_id])
-    assert pdf_metadata['uri'] == pdf_metadatas_reference[pdf_metadata_id]['uri']
-    assert pdf_metadata['authors'] == pdf_metadatas_reference[pdf_metadata_id]['authors']
-    assert pdf_metadata['title'] == pdf_metadatas_reference[pdf_metadata_id]['title']
-    assert pdf_metadata['references'] == []
-
+    with pytest.raises(UnknownRefStyle):
+        extract_pdf(pdf_metadatas_reference[pdf_metadata_id])
+    
     # Check when no reference found
     mocker.patch('src.core.pdf_extractor_utils.extract_references_from_pdf_uri', return_value = [])
     pdf_metadata_id = 0

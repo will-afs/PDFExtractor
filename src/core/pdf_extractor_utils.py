@@ -1,28 +1,8 @@
-# from src.core.refextract_in_memory_utils import extract_references_from_url
-from src.core.refextract_utils import extract_references_from_url
-# from refextract import extract_references_from_url
+from refextract import extract_references_from_url
 from enum import Enum
 from urllib.error import URLError
 import re
 import validators
-
-def extract_references_from_pdf_uri(pdf_uri:str)->list:
-    """Return the references of a PDF in a list. If none are found, return an empty list
-
-    Parameters:
-    pdf_uri (str) : the PDF URI. If not in a correct format, raise a ValueError
-
-    Returns:
-    list: A list of the references found in the PDF
-    """
-    if not validators.url(pdf_uri):
-        raise ValueError(
-                            "Wrong URI format for 'pdf_uri' argument.\
-                            Expected an url-like string. Example 'http://arxiv.org/pdf/cs/9308101v1'"
-                        )
-    else:
-        references = extract_references_from_url(pdf_uri)
-    return references
 
 def extract_pdf(pdf_metadata:dict) -> dict:
     """Extract the references of a PDF and aggregates them to the PDF metadata
@@ -59,8 +39,7 @@ def extract_pdf(pdf_metadata:dict) -> dict:
     # 3 - Predict PDF References style
     ref_style = predict_ref_style(extracted_references[0]['raw_ref'][0])
     if ref_style == RefStyle.Unknown:
-        print('Unkown reference style for article with URN:\'{}\''.format(pdf_metadata['uri']))
-        return pdf_dict
+        raise UnknownRefStyle('Unkown reference style for article with URN:\'{}\''.format(pdf_metadata['uri']))
     # 4 - Extract named entities from references
     for reference_dict in extracted_references:
         reference = {
@@ -80,6 +59,27 @@ def extract_pdf(pdf_metadata:dict) -> dict:
             else:
                 print('Could not extract author for ref:\'{}\''.format(reference_dict['raw_ref'][0]))
     return pdf_dict
+
+def extract_references_from_pdf_uri(pdf_uri:str)->list:
+    """Return the references of a PDF in a list. If none are found, return an empty list
+
+    Parameters:
+    pdf_uri (str) : the PDF URI. If not in a correct format, raise a ValueError
+
+    Returns:
+    list: A list of the references found in the PDF
+    """
+    if not validators.url(pdf_uri):
+        raise ValueError(
+                            "Wrong URI format for 'pdf_uri' argument.\
+                            Expected an url-like string. Example 'http://arxiv.org/pdf/cs/9308101v1'"
+                        )
+    else:
+        references = extract_references_from_url(pdf_uri)
+    return references
+
+class UnknownRefStyle(Exception):
+    pass
 
 class RefStyle(Enum):
     Unknown = 0

@@ -1,9 +1,7 @@
 from src.core.pdf_extractor_utils import extract_pdf
 
 from refextract.references.errors import FullTextNotAvailableError, UnknownDocumentTypeError
-import toml
 import traceback
-from urllib.error import URLError
 import validators
 
 
@@ -32,14 +30,6 @@ def lambda_handler(event, context):
             # 2 - construct the body of the response object
             try:
                 pdf_dict = extract_pdf(pdf_metadata)
-            except URLError as err: # Cooldown Manager not reachable
-                status = 502
-                message = str(err)
-                body = {}
-            except ConnectionRefusedError:
-                status = 502
-                message = 'Internal service CooldownManager did not allow to request ArXiv.org services'
-                body = {}
             except FullTextNotAvailableError:
                 status = 502
                 message = 'Could not reach \''+pdf_metadata['uri']+'\' to fetch the PDF'
