@@ -140,4 +140,4 @@ Now, deploy the API so that it can be reached from the internet
 
 You should now be able to test the API from a CLI. For example:
 
-    curl -X POST "https://lbninhtxlc.execute-api.eu-west-3.amazonaws.com/beta/test-function" -d "{\"uri\":\"http://arxiv.org/pdf/cs/9308101v1\",\"title\":\"DynamicBacktracking\",\"authors\":[\"M.L.Ginsberg\"]}"
+    curl -X POST "https://qp1s494gph.execute-api.eu-west-3.amazonaws.com/default/PDFExtractor" -d "{\"uri\":\"http://arxiv.org/pdf/cs/9308101v1\",\"title\":\"DynamicBacktracking\",\"authors\":[\"M.L.Ginsberg\"]}"
