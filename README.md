@@ -27,6 +27,8 @@ So you can request it locally, for instance from a terminal:
 
 You should obtain the following answer:
 
+    {"status": 200, "headers": {"Content-Type": "application/json"}, "message": "Success", "body": {"uri": "http://arxiv.org/pdf/cs/9308101v1", "authors": ["M.L.Ginsberg"], "title": "DynamicBacktracking", "references": [{"authors": ["Bruynooghe, M."]}, {"authors": ["Information Processing Letters, 12(1), 36{39. de Kleer, J."]}, {"authors": ["Information Processing Letters, 12(1), 36{39. de Kleer, J."]}, {"authors": ["Dechter, R.", "Meiri, I."]}, {"authors": ["Gaschnig, J."]}, {"authors": ["Ginsberg, M. L.", "Frank, M.", "Halpin, M. P.", "Torrance, M. C."]}, {"authors": ["Ginsberg, M. L.", "Harvey, W. D."]}, {"authors": ["Jonsson, A. K.", "Ginsberg, M. L."]}, {"authors": ["McAllester, D. A."]}, {"authors": ["Minton, S.", "Johnston, M. D.", "Philips, A. B.", "Laird, P."]}, {"authors": ["P. Purdom, C. B.", "Robertson, E."]}, {"authors": ["Seidel, R."]}, {"authors": ["Selman, B.", "Levesque, H.", "Mitchell, D."]}, {"authors": ["Smith, D. E.", "Genesereth, M. R."]}, {"authors": ["Stallman, R. M.", "Sussman, G. J."]}, {"authors": ["Zabih, R."]}, {"authors": ["Zabih, R.", "McAllester, D. A."]}]}}
+
 🧪 Developing and running tests
 --------------------------------
 In a terminal, run the following command:
@@ -77,7 +79,7 @@ Pushing the Docker image to your registry :
 
 You can now run the Docker image as a container :
 
-    sudo docker run -d -p 80:80 pdfextractor
+    sudo docker run -p 9000:8080 pdfextractor:latest
     
 ☁️ Deploying on AWS Lambda
 ---------------------------
