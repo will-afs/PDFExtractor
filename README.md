@@ -105,7 +105,7 @@ Push your docker image to your AWS ECR. Example:
     
 Create an AWS Lambda function, selecting Lambda from "image"
 
-Add a VPC to AWS Lambda to enable it communicating with other applications from within (ArXivParser). 
+Add a VPC to AWS Lambda to enable it communicating with other applications from within (ArXivParser).
 You might need to edit the Lambda-role by adding a new policy (e.g. AmazonEC2FullAccess).
 
 Now test it with the following request body:
@@ -131,8 +131,12 @@ If Lambda integration is selected, unselect it
 
 You should now be able to test the API from the AWS console (use the request body provided above)
 
-Now, deploy the API so that it can be reached from the internet
+Now, deploy the API
+
+And configure the Security Group attached to the VPC so that the API can be reached from the internet
+
+Create an API key and bind it to the API Gateway so that the API can only be accessed by clients in possession of the key
 
 You should now be able to test the API from a CLI. For example:
 
-    curl -X POST "https://qp1s494gph.execute-api.eu-west-3.amazonaws.com/default/PDFExtractor" -d "{\"uri\":\"http://arxiv.org/pdf/cs/9308101v1\",\"title\":\"DynamicBacktracking\",\"authors\":[\"M.L.Ginsberg\"]}"
+    curl -H "apikey: <your_api_key>" -X POST "<your_api_gateway_uri>" -d "{\"uri\":\"http://arxiv.org/pdf/cs/9308101v1\",\"title\":\"DynamicBacktracking\",\"authors\":[\"M.L.Ginsberg\"]}"
